@@ -39,7 +39,8 @@
         "style": "tailwind"
       },
       "library": {
-        "style": "tailwind"
+        "style": "tailwind",
+        "unitTestRunner": "vitest"
       }
     }
   },
