@@ -14,6 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "resolveJsonModule": true,
     "paths": {
       "@demo-app-core/components": [
         "libs/demo-app-core/src/components/index.ts"
@@ -22,6 +23,7 @@
         "libs/demo-app-core/src/navigation/index.ts"
       ],
       "@core/helpers": ["libs/core/src/helpers/index.ts"],
+      "@core/hooks": ["libs/core/src/hooks/index.ts"],
       "@core/types": ["libs/core/src/types/index.ts"],
       "@ui/images": ["libs/ui/src/images/index.ts"],
       "@ui/components": ["libs/ui/src/components/index.ts"],

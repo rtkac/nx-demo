@@ -1,27 +1,23 @@
-import i18n from "i18next";
+import i18n, { type Resource } from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
-export const resources = {
-	en: {
-		translation: {
-			"test.key": "test key value",
-		},
-	},
-	ar: {
-		translation: {
-			"test.key": "arabic key value",
-		},
-	},
+import { AppLang } from "../types";
+
+export const registerTranslations = (resources: Resource): void => {
+	i18n
+		.use(LanguageDetector)
+		.use(initReactI18next)
+		.init({
+			supportedLngs: [AppLang.EN, AppLang.AR],
+			resources,
+			keySeparator: false,
+			interpolation: {
+				escapeValue: false,
+			},
+		});
 };
 
-export const registerTranslations = () => {
-	return i18n.use(initReactI18next).init({
-		lng: "auto",
-		fallbackLng: "en",
-		resources,
-		keySeparator: false,
-		interpolation: {
-			escapeValue: false,
-		},
-	});
+export const changeLanguage = (lang: AppLang): void => {
+	i18n.changeLanguage(lang);
 };

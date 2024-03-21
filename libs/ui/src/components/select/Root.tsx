@@ -2,21 +2,23 @@ import type { ComponentPropsWithoutRef, PropsWithChildren } from "react";
 import * as Select from "@radix-ui/react-select";
 import { ChevronDownIcon, ChevronUpIcon } from "@radix-ui/react-icons";
 
-import type { APP_LANG } from "@core/types";
+import type { AppLang } from "@core/types";
 import clsx from "clsx";
 
 interface RootProps
 	extends PropsWithChildren,
 		ComponentPropsWithoutRef<"select"> {
-	defaultValue: APP_LANG;
+	defaultValue: AppLang;
+	onValueChange?: (value: string) => void;
 }
 
 export const Root: React.FC<RootProps> = ({
 	children,
 	defaultValue,
 	className,
+	onValueChange,
 }) => (
-	<Select.Root defaultValue={defaultValue}>
+	<Select.Root defaultValue={defaultValue} onValueChange={onValueChange}>
 		<Select.Trigger
 			className={clsx(
 				className,

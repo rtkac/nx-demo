@@ -1,10 +1,16 @@
-import { TranslationsBoundary, RouterBoundary } from "./boundaries";
+import {
+	TranslationsBoundary,
+	RouterBoundary,
+	DirectionsBoundary,
+} from "./boundaries";
 
 export function App() {
 	return (
-		<TranslationsBoundary>
-			<RouterBoundary />
-		</TranslationsBoundary>
+		<DirectionsBoundary>
+			<TranslationsBoundary>
+				<RouterBoundary />
+			</TranslationsBoundary>
+		</DirectionsBoundary>
 	);
 }
 

@@ -1,4 +1,4 @@
-export enum APP_LANG {
-	EN = "EN",
-	AR = "AR",
+export enum AppLang {
+	EN = "en",
+	AR = "ar",
 }
