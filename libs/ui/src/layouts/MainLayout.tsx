@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom";
 
-import { Header } from "../components/header/Header";
+interface MainLayoutProps {
+	coreHeader: JSX.Element;
+}
 
-import { ReactComponent as Logo } from "../images/nx_logo.svg";
-
-export const MainLayout: React.FC = () => {
+export const MainLayout: React.FC<MainLayoutProps> = ({ coreHeader }) => {
 	return (
 		<div>
-			<Header logo={Logo} />
-			<Outlet />
+			{coreHeader}
+			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+				<Outlet />
+			</div>
 		</div>
 	);
 };

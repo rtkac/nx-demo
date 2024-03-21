@@ -1,1 +1,1 @@
-export * as Logo from "./nx_logo.svg";
+export { ReactComponent as Logo } from "./nx_logo.svg";

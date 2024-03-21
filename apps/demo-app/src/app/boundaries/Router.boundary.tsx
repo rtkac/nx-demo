@@ -1,18 +1,34 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import * as fromNav from "@demo-app-core/navigation";
+import { CoreHeader } from "@demo-app-core/components";
 
 import { MainLayout } from "@ui/layouts";
+
 import { Home } from "../pages/home/Home";
 import { NotFound } from "../pages/not-found/NotFound";
 
 export const RouterBoundary: React.FC = () => {
-	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<MainLayout />}>
-					<Route index element={<Home />} />
-					<Route path="*" element={<NotFound />} />
-				</Route>
-			</Routes>
-		</BrowserRouter>
-	);
+	const router = createBrowserRouter([
+		{
+			path: "/",
+			element: <MainLayout coreHeader={<CoreHeader />} />,
+			children: [
+				{
+					path: fromNav.DASHBOARD,
+					element: <Home />,
+				},
+				{
+					path: fromNav.FORM,
+					element: <p>TODO</p>, // TODO
+				},
+				{
+					path: fromNav.NOT_FOUND,
+					element: <NotFound />,
+				},
+			],
+		},
+	]);
+
+	return <RouterProvider router={router} />;
 };

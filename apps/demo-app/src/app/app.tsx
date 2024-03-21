@@ -1,7 +1,11 @@
-import { RouterBoundary } from "./boundaries";
+import { TranslationsBoundary, RouterBoundary } from "./boundaries";
 
 export function App() {
-	return <RouterBoundary />;
+	return (
+		<TranslationsBoundary>
+			<RouterBoundary />
+		</TranslationsBoundary>
+	);
 }
 
 export default App;
