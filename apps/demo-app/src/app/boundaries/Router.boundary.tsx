@@ -1,7 +1,7 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import * as fromNav from "@demo-app-core/navigation";
 import { CoreHeader } from "@demo-app-core/components";
+import * as fromNav from "@demo-app-core/navigation";
 
 import { MainLayout } from "@ui/layouts";
 

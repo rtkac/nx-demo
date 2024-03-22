@@ -1,6 +1,6 @@
+import clsx from "clsx";
 import type { PropsWithChildren } from "react";
 import { NavLink } from "react-router-dom";
-import clsx from "clsx";
 
 interface ItemProps extends PropsWithChildren {
 	link: string;

@@ -1,6 +1,6 @@
-import type { ComponentPropsWithoutRef, PropsWithChildren } from "react";
-import * as Select from "@radix-ui/react-select";
 import { ChevronDownIcon, ChevronUpIcon } from "@radix-ui/react-icons";
+import * as Select from "@radix-ui/react-select";
+import type { ComponentPropsWithoutRef, PropsWithChildren } from "react";
 
 import type { AppLang } from "@core/types";
 import clsx from "clsx";

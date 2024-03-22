@@ -1,11 +1,11 @@
 {
-  "en": {
-    "translation": {
-      "lang.en": "en",
-      "lang.ar": "ar",
-      "navigation.home": "Home",
-      "navigation.form": "Form",
-      "navigation.something": "Something"
-    }
-  }
+	"en": {
+		"translation": {
+			"lang.en": "en",
+			"lang.ar": "ar",
+			"navigation.home": "Home",
+			"navigation.form": "Form",
+			"navigation.something": "Something"
+		}
+	}
 }

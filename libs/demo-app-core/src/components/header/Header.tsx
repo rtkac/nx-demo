@@ -1,9 +1,9 @@
+import i18next from "i18next";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
-import { AppLang } from "@core/types";
 import { changeLanguage } from "@core/helpers";
+import { AppLang } from "@core/types";
 
 import * as fromNav from "@demo-app-core/navigation";
 

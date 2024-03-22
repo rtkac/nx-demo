@@ -1,6 +1,6 @@
-import { useMemo, type PropsWithChildren } from "react";
-import { useTranslation } from "react-i18next";
 import { DirectionProvider } from "@radix-ui/react-direction";
+import { type PropsWithChildren, useMemo } from "react";
+import { useTranslation } from "react-i18next";
 
 interface DirectionsBoundaryProps extends PropsWithChildren {}
 

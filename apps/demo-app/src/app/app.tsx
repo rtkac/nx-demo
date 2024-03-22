@@ -1,7 +1,7 @@
 import {
-	TranslationsBoundary,
-	RouterBoundary,
 	DirectionsBoundary,
+	RouterBoundary,
+	TranslationsBoundary,
 } from "./boundaries";
 
 export function App() {
