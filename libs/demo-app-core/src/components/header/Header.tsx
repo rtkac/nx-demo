@@ -31,7 +31,7 @@ export const CoreHeader: React.FC = () => {
 			<Navigation.Item link={fromNav.DASHBOARD}>
 				{t("navigation.home")}
 			</Navigation.Item>
-			<Navigation.Item link={fromNav.FORM}>
+			<Navigation.Item link={fromNav.SIGN_UP}>
 				{t("navigation.form")}
 			</Navigation.Item>
 			<Navigation.Item link={fromNav.SOMETHING}>
