@@ -1,7 +1,7 @@
+import { nxViteTsPaths } from "@nx/vite/plugins/nx-tsconfig-paths.plugin";
+import react from "@vitejs/plugin-react";
 /// <reference types='vitest' />
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import { nxViteTsPaths } from "@nx/vite/plugins/nx-tsconfig-paths.plugin";
 import svgr from "vite-plugin-svgr";
 
 export default defineConfig({

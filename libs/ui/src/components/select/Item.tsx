@@ -1,7 +1,7 @@
-import React, { type PropsWithChildren } from "react";
-import clsx from "clsx";
-import * as Select from "@radix-ui/react-select";
 import { CheckIcon } from "@radix-ui/react-icons";
+import * as Select from "@radix-ui/react-select";
+import clsx from "clsx";
+import React, { type PropsWithChildren } from "react";
 
 interface ItemProps extends PropsWithChildren, Select.SelectItemProps {}
 
