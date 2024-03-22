@@ -16,17 +16,17 @@
     "baseUrl": ".",
     "resolveJsonModule": true,
     "paths": {
+      "@core/helpers": ["libs/core/src/helpers/index.ts"],
+      "@core/hooks": ["libs/core/src/hooks/index.ts"],
+      "@core/types": ["libs/core/src/types/index.ts"],
       "@demo-app-core/components": [
         "libs/demo-app-core/src/components/index.ts"
       ],
       "@demo-app-core/navigation": [
         "libs/demo-app-core/src/navigation/index.ts"
       ],
-      "@core/helpers": ["libs/core/src/helpers/index.ts"],
-      "@core/hooks": ["libs/core/src/hooks/index.ts"],
-      "@core/types": ["libs/core/src/types/index.ts"],
-      "@ui/images": ["libs/ui/src/images/index.ts"],
       "@ui/components": ["libs/ui/src/components/index.ts"],
+      "@ui/images": ["libs/ui/src/images/index.ts"],
       "@ui/layouts": ["libs/ui/src/layouts/index.ts"]
     }
   },

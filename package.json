@@ -13,7 +13,13 @@
     "show:demo-app": "nx show project demo-app --web",
     "lint": "nx run-many --target=lint --all --parallel",
     "lint:apps": "nx run-many --target=lint --projects=apps/* --parallel",
-    "lint:libs": "nx run-many --target=lint --projects=libs/* --parallel"
+    "lint:libs": "nx run-many --target=lint --projects=libs/* --parallel",
+    "release:demo-app:patch": "nx run demo-app:version --releaseAs=patch",
+    "release:demo-app:minor": "nx run demo-app:version --releaseAs=minor",
+    "release:demo-app:major": "nx run demo-app:version --releaseAs=major",
+    "release:demo-app:dry-run": "nx run demo-app:version --dry-run",
+    "release:push": "git push --follow-tags origin",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +40,9 @@
     "@babel/core": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
     "@biomejs/biome": "1.6.1",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@jscutlery/semver": "^5.2.0",
     "@nx/cypress": "18.1.2",
     "@nx/devkit": "18.1.2",
     "@nx/eslint": "18.1.2",
@@ -65,6 +74,7 @@
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "^9.0.11",
     "jsdom": "~22.1.0",
     "nx": "18.1.2",
     "postcss": "8.4.21",

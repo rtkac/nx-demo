@@ -11,6 +11,16 @@
       "options": {
         "command": "biome lint apps/demo-app"
       }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "changelogHeader": "# Changelog Demo App \n",
+        "baseBranch": "main",
+        "syncVersions": false,
+        "commitMessageFormat": "chore({projectName}): release: v{version}",
+        "push": false
+      }
     }
   }
 }

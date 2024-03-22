@@ -9,10 +9,9 @@ export const DirectionsBoundary: React.FC<DirectionsBoundaryProps> = ({
 }) => {
 	const { i18n } = useTranslation();
 
-	const direction = useMemo(
-		() => i18n.dir(i18n.resolvedLanguage),
-		[i18n, i18n.resolvedLanguage],
-	);
+	const direction = useMemo(() => {
+		return i18n.dir(i18n.resolvedLanguage);
+	}, [i18n, i18n.resolvedLanguage]);
 
 	return <DirectionProvider dir={direction}>{children}</DirectionProvider>;
 };
