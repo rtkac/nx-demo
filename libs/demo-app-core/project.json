@@ -9,7 +9,13 @@
 		"lint": {
 			"executor": "nx:run-commands",
 			"options": {
-				"command": "biome lint libs/demo-app-core"
+				"command": "npx biome lint libs/demo-app-core"
+			}
+		},
+		"format": {
+			"executor": "nx:run-commands",
+			"options": {
+				"command": "npx biome format libs/demo-app-core"
 			}
 		}
 	}
