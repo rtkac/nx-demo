@@ -6,11 +6,11 @@ import {
 
 export function App() {
 	return (
-		<DirectionsBoundary>
-			<TranslationsBoundary>
+		<TranslationsBoundary>
+			<DirectionsBoundary>
 				<RouterBoundary />
-			</TranslationsBoundary>
-		</DirectionsBoundary>
+			</DirectionsBoundary>
+		</TranslationsBoundary>
 	);
 }
 
