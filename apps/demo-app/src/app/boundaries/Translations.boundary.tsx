@@ -13,7 +13,11 @@ interface TranslationsBoundary extends PropsWithChildren {}
 export const TranslationsBoundary: React.FC<TranslationsBoundary> = ({
 	children,
 }) => {
-	useTranslationsDocumentAttribute();
+	const { resolved } = useTranslationsDocumentAttribute();
 
-	return children;
+	if (resolved) {
+		return children;
+	}
+
+	return "loading...";
 };

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { Button, Form } from "@ui/components";
 
-export const SignUpForm = () => {
+export const SignUpForm: React.FC = () => {
 	const { t } = useTranslation();
 
 	return (
