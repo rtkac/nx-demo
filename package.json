@@ -16,6 +16,7 @@
 		"lint": "nx run-many --target=lint --all --parallel",
 		"lint:apps": "nx run-many --target=lint --projects=apps/* --parallel",
 		"lint:libs": "nx run-many --target=lint --projects=libs/* --parallel",
+		"test:apps": "nx run-many --target=text --projects=apps/* --parallel",
 		"release:demo-app:patch": "nx run demo-app:version --releaseAs=patch",
 		"release:demo-app:minor": "nx run demo-app:version --releaseAs=minor",
 		"release:demo-app:major": "nx run demo-app:version --releaseAs=major",
