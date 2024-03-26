@@ -1,5 +1,14 @@
 # Changelog Demo App 
 
+## [0.1.1](https://github.com/rtkac/nx-demo/compare/demo-app-0.1.0...demo-app-0.1.1) (2024-03-26)
+
+
+### Features
+
+* **libs:** added direction hook ([fef7c16](https://github.com/rtkac/nx-demo/commit/fef7c1676b659b45c3a58040e6847b5e351f1301))
+
+
+
 # [0.1.0](https://github.com/rtkac/nx-demo/compare/demo-app-0.0.1...demo-app-0.1.0) (2024-03-22)
 
 
