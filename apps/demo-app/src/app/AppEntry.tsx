@@ -4,7 +4,7 @@ import {
 	TranslationsBoundary,
 } from "./boundaries";
 
-export function App() {
+export function AppEntry() {
 	return (
 		<TranslationsBoundary>
 			<DirectionsBoundary>
@@ -14,4 +14,4 @@ export function App() {
 	);
 }
 
-export default App;
+export default AppEntry;

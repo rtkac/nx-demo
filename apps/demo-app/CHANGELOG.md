@@ -1,5 +1,16 @@
 # Changelog Demo App 
 
+# [0.2.0](https://github.com/rtkac/nx-demo/compare/demo-app-0.1.1...demo-app-0.2.0) (2024-03-26)
+
+
+### Features
+
+* **all:** added spinner component, updated useDir hook ([a042c5e](https://github.com/rtkac/nx-demo/commit/a042c5eeb251497316c97711118b81bc43e589ae))
+* **all:** update app entry component, add test command ([43565c0](https://github.com/rtkac/nx-demo/commit/43565c0666606035a8440a36f0dbcc33133e4a64))
+* **demo-app:** home page changes ([4277dc4](https://github.com/rtkac/nx-demo/commit/4277dc45d28aba944c88078b5b646b287d644b0a))
+
+
+
 ## [0.1.1](https://github.com/rtkac/nx-demo/compare/demo-app-0.1.0...demo-app-0.1.1) (2024-03-26)
 
 

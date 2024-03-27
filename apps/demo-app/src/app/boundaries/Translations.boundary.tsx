@@ -3,6 +3,7 @@ import type { PropsWithChildren } from "react";
 import { registerTranslations } from "@core/helpers";
 import { useTranslationsDocumentAttribute } from "@core/hooks";
 
+import { Spinner } from "@ui/components";
 import { ar as translationAR } from "../../assets/translations/ar.json";
 import { en as translationEN } from "../../assets/translations/en.json";
 
@@ -19,5 +20,9 @@ export const TranslationsBoundary: React.FC<TranslationsBoundary> = ({
 		return children;
 	}
 
-	return "loading...";
+	return (
+		<div className="flex justify-center p-10">
+			<Spinner.Root />
+		</div>
+	);
 };
