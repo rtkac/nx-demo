@@ -6,17 +6,13 @@
 import { Logger } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";
 
-import { AppModule } from "./app/app.module";
+import { CommonModule } from "./common/common.module";
 
 async function bootstrap() {
-	const app = await NestFactory.create(AppModule);
-	const globalPrefix = "api";
-	app.setGlobalPrefix(globalPrefix);
-	const port = process.env.PORT || 3000;
-	await app.listen(port);
-	Logger.log(
-		`🚀 Application is running on: http://localhost:${port}/${globalPrefix}`,
-	);
+	const commonApp = await NestFactory.create(CommonModule);
+	commonApp.setGlobalPrefix("api/common");
+	await commonApp.listen(3000);
+	Logger.log(`Common mock app is running on: ${await commonApp.getUrl()}`);
 }
 
 bootstrap();

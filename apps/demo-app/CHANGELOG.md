@@ -1,5 +1,9 @@
 # Changelog Demo App 
 
+# [0.3.0](https://github.com/rtkac/nx-demo/compare/demo-app-0.2.0...demo-app-0.3.0) (2024-04-05)
+
+
+
 # [0.2.0](https://github.com/rtkac/nx-demo/compare/demo-app-0.1.1...demo-app-0.2.0) (2024-03-26)
 
 
