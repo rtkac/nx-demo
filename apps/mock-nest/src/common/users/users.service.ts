@@ -10,7 +10,7 @@ export class UsersService {
 			return {
 				id: faker.string.uuid(),
 				name: faker.internet.userName(),
-				username: faker.internet.displayName(),
+				username: faker.person.fullName(),
 				email: faker.internet.email(),
 				address: {
 					street: faker.location.street(),
