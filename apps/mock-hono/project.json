@@ -1,0 +1,42 @@
+{
+	"name": "mock-hono",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/mock-hono/src",
+	"projectType": "application",
+	"targets": {
+		"build": {
+			"executor": "nx:run-commands",
+			"options": {
+				"command": "tsc -p apps/mock-hono"
+			}
+		},
+		"serve": {
+			"executor": "@nx/js:node",
+			"defaultConfiguration": "development",
+			"options": {
+				"buildTarget": "mock-hono:build"
+			},
+			"configurations": {
+				"development": {
+					"buildTarget": "mock-hono:build:development"
+				},
+				"production": {
+					"buildTarget": "mock-hono:build:production"
+				}
+			}
+		},
+		"lint": {
+			"executor": "nx:run-commands",
+			"options": {
+				"command": "npx biome lint apps/mock-hono"
+			}
+		},
+		"format": {
+			"executor": "nx:run-commands",
+			"options": {
+				"command": "npx biome format apps/mock-hono"
+			}
+		}
+	},
+	"tags": []
+}

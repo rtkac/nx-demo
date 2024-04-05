@@ -1,5 +1,18 @@
 # Changelog Demo App 
 
+# [0.4.0](https://github.com/rtkac/nx-demo/compare/demo-app-0.3.0...demo-app-0.4.0) (2024-04-05)
+
+
+### Features
+
+* **demo-app:** added redux store with api middleware and users page ([8e00bf9](https://github.com/rtkac/nx-demo/commit/8e00bf986e198c93a90c923a3191470101bc925e))
+
+
+
+# [0.3.0](https://github.com/rtkac/nx-demo/compare/demo-app-0.2.0...demo-app-0.3.0) (2024-04-05)
+
+
+
 # [0.2.0](https://github.com/rtkac/nx-demo/compare/demo-app-0.1.1...demo-app-0.2.0) (2024-03-26)
 
 

@@ -18,6 +18,7 @@
 		"paths": {
 			"@core/helpers": ["libs/core/src/helpers/index.ts"],
 			"@core/hooks": ["libs/core/src/hooks/index.ts"],
+			"@core/redux": ["libs/core/src/redux/index.ts"],
 			"@core/types": ["libs/core/src/types/index.ts"],
 			"@demo-app-core/components": [
 				"libs/demo-app-core/src/components/index.ts"

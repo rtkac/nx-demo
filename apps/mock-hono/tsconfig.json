@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"types": ["node"],
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "es2021",
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx",
+		"outDir": "../../dist/apps/mock-hono"
+	},
+	"exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"],
+	"include": ["src/**/*.ts"]
+}

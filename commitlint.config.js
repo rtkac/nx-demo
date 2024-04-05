@@ -3,6 +3,10 @@ module.exports = {
 	rules: {
 		"header-max-length": () => [2, "always", 260],
 		"scope-empty": [2, "never"],
-		"scope-enum": () => [2, "always", ["demo-app", "libs", "ui", "all"]],
+		"scope-enum": () => [
+			2,
+			"always",
+			["demo-app", "mock", "libs", "ui", "all"],
+		],
 	},
 };
