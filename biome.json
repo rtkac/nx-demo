@@ -13,6 +13,9 @@
 			"recommended": true,
 			"correctness": {
 				"noUnusedVariables": "warn"
+			},
+			"style": {
+				"useImportType": "off"
 			}
 		},
 		"ignore": ["node_modules", "dist"]
