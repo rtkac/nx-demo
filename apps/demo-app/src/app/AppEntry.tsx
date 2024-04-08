@@ -1,5 +1,6 @@
 import {
 	DirectionsBoundary,
+	OutageBoundary,
 	ReduxBoundary,
 	RouterBoundary,
 	TranslationsBoundary,
@@ -10,7 +11,9 @@ export function AppEntry() {
 		<TranslationsBoundary>
 			<DirectionsBoundary>
 				<ReduxBoundary>
-					<RouterBoundary />
+					<OutageBoundary>
+						<RouterBoundary />
+					</OutageBoundary>
 				</ReduxBoundary>
 			</DirectionsBoundary>
 		</TranslationsBoundary>

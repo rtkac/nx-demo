@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 import { Provider } from "react-redux";
 
-import { store } from "@core/redux";
+import { store } from "@demo-app-core/redux";
 
 interface ReduxBoundaryProps extends PropsWithChildren {}
 
