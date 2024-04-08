@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-import { User } from "../../types/api";
+import { User } from "@core/types";
 
 export const commonApiClient = createApi({
 	baseQuery: fetchBaseQuery({

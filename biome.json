@@ -16,6 +16,9 @@
 			},
 			"style": {
 				"useImportType": "off"
+			},
+			"suspicious": {
+				"noExplicitAny": "warn"
 			}
 		},
 		"ignore": ["node_modules", "dist"]

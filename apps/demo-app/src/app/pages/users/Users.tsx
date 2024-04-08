@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import { commonApiClient } from "@core/redux";
+import { commonApiClient } from "@demo-app-core/redux";
 
 import { Spinner } from "@ui/components";
 import { User } from "./components/User";
