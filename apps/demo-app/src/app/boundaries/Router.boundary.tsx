@@ -7,7 +7,7 @@ import { MainLayout } from "@ui/layouts";
 
 import { Home } from "../pages/home/Home";
 import { NotFound } from "../pages/not-found/NotFound";
-import { SignUpForm } from "../pages/sign-up/Form";
+import { SignUp } from "../pages/sign-up/SignUp";
 import { Users } from "../pages/users/Users";
 
 export const RouterBoundary: React.FC = () => {
@@ -26,7 +26,7 @@ export const RouterBoundary: React.FC = () => {
 				},
 				{
 					path: fromNav.SIGN_UP,
-					element: <SignUpForm />,
+					element: <SignUp />,
 				},
 				{
 					path: fromNav.NOT_FOUND,
