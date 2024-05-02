@@ -1,4 +1,4 @@
-import { Primary } from "./Primary";
-import { Secondary } from "./Secondary";
+import { Primary } from './Primary'
+import { Secondary } from './Secondary'
 
-export const Button = { Primary, Secondary };
+export const Button = { Primary, Secondary }

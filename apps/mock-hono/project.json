@@ -1,36 +1,36 @@
 {
-	"name": "mock-hono",
-	"$schema": "../../node_modules/nx/schemas/project-schema.json",
-	"sourceRoot": "apps/mock-hono/src",
-	"projectType": "application",
-	"targets": {
-		"serve": {
-			"executor": "@nx/js:node",
-			"defaultConfiguration": "development",
-			"options": {
-				"buildTarget": "mock-nest:build"
-			},
-			"configurations": {
-				"development": {
-					"buildTarget": "mock-nest:build:development"
-				},
-				"production": {
-					"buildTarget": "mock-nest:build:production"
-				}
-			}
-		},
-		"lint": {
-			"executor": "nx:run-commands",
-			"options": {
-				"command": "npx biome lint apps/mock-hono"
-			}
-		},
-		"format": {
-			"executor": "nx:run-commands",
-			"options": {
-				"command": "npx biome format apps/mock-hono"
-			}
-		}
-	},
-	"tags": []
+  "name": "mock-hono",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mock-hono/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "mock-nest:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "mock-nest:build:development"
+        },
+        "production": {
+          "buildTarget": "mock-nest:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx biome lint apps/mock-hono"
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx biome format apps/mock-hono"
+      }
+    }
+  },
+  "tags": []
 }

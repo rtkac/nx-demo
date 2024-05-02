@@ -1,3 +1,3 @@
-export * from "./images";
-export * from "./components";
-export * from "./layouts";
+export * from './images'
+export * from './components'
+export * from './layouts'

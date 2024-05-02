@@ -1,9 +1,9 @@
 export enum AppLang {
-	EN = "en",
-	AR = "ar",
+  EN = 'en',
+  AR = 'ar',
 }
 
 export enum AppDir {
-	LTR = "ltr",
-	RTL = "rtl",
+  LTR = 'ltr',
+  RTL = 'rtl',
 }

@@ -1,1 +1,1 @@
-export * from "./outageMiddleware";
+export * from './outageMiddleware'
