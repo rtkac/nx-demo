@@ -1,5 +1,16 @@
 # Changelog Demo App 
 
+# [0.5.0-0](https://github.com/rtkac/nx-demo/compare/demo-app-0.4.0...demo-app-0.5.0-0) (2024-05-07)
+
+
+### Features
+
+* **all:** some updates ([8d7b34c](https://github.com/rtkac/nx-demo/commit/8d7b34c5231aa7c93793ab39a255fd4ee28d2f52))
+* **demo-app:** added create user logic ([a59bde8](https://github.com/rtkac/nx-demo/commit/a59bde8a3a12c4b7f15e28f78920273956e8a326))
+* **demo-app:** added outage middleware with boundary, create hono users api, more updates ([cc46dfc](https://github.com/rtkac/nx-demo/commit/cc46dfcd29daa1a9b77943ae9b84a444bbe94254))
+
+
+
 # [0.4.0](https://github.com/rtkac/nx-demo/compare/demo-app-0.3.0...demo-app-0.4.0) (2024-04-05)
 
 
