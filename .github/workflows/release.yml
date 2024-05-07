@@ -1,7 +1,10 @@
 name: release
 
 on:
-  - workflow_dispatch
+  pull_request:
+    branches:
+      - main
+    types: [closed]
 
 jobs:
   release:
@@ -21,7 +24,7 @@ jobs:
       - run: npm ci
       - name: Version
         shell: bash
-        run: npx nx affected --base=develop --target=version --prerelease alpha
+        run: npx nx affected --base=main --target=version --prerelease=alpha
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Tag
