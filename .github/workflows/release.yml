@@ -30,7 +30,7 @@ jobs:
         run: npx nx affected --base=main --target=version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Push
+      - name: Push to remote
         shell: bash
         run: |
           git push origin main --force
