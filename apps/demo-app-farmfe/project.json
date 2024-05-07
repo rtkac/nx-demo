@@ -1,0 +1,32 @@
+{
+  "name": "demo-app-farmfe",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/demo-app-farmfe/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project demo-app-farmfe --web",
+  "targets": {
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx biome lint apps/demo-app-farmfe"
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx biome format apps/demo-app-farmfe"
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "changelogHeader": "# Changelog Demo App Farm \n",
+        "baseBranch": "main",
+        "syncVersions": false,
+        "commitMessageFormat": "chore({projectName}): release: v{version}",
+        "push": false
+      }
+    }
+  }
+}

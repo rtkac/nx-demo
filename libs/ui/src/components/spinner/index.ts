@@ -1,3 +1,3 @@
-import { Root } from "./Root";
+import { Root } from './Root'
 
-export const Spinner = { Root };
+export const Spinner = { Root }

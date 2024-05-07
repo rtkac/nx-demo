@@ -1,3 +1,3 @@
 export interface FormContext {
-	name: string;
+  name: string
 }

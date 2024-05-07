@@ -1,5 +1,5 @@
-import { Hono } from "hono";
+import { Hono } from 'hono/tiny'
 
-import { usersRoutes } from "./users";
+import { usersRoutes } from './users'
 
-export const usersApi = new Hono().route("/users", usersRoutes);
+export const usersApi = new Hono().route('/users', usersRoutes)

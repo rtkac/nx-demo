@@ -1,1 +1,1 @@
-export * from "./commonApiClient";
+export * from './commonApiClient'
