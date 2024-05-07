@@ -1,0 +1,4 @@
+{
+	"commitUrlFormat": "https://github.com/rtkac/{{repository}}/commit/{{hash}}",
+	"compareUrlFormat": "https://github.com/rtkac/{{repository}}/compare/{{previousTag}}...{{currentTag}}"
+}
