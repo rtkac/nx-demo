@@ -26,6 +26,7 @@
         "syncVersions": false,
         "commitMessageFormat": "chore({projectName}): release: v{version}",
         "push": true,
+        "tagPrefix": "{projectName}@",
         "releaseAs": "prerelease"
       }
     }
