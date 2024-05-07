@@ -29,5 +29,4 @@ jobs:
       - name: Tag
         shell: bash
         run: |
-          git tag -f main
           git push origin main --force
