@@ -8,7 +8,6 @@ export function AppEntry() {
           <OutageBoundary>
             <div>
               <RouterBoundary />
-              <span>test</span>
             </div>
           </OutageBoundary>
         </ReduxBoundary>
