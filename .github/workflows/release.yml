@@ -25,10 +25,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
-        uses: nrwl/nx-set-shas@v3
         id: setSHAs
+        uses: nrwl/nx-set-shas@v4
         with:
           last-successful-event: 'pull-request'
+          error-on-no-successful-workflow: true
           main-branch-name: 'main'
       - name: Run versioning
         shell: bash
