@@ -34,9 +34,9 @@ jobs:
         shell: bash
         run: |
           npx nx affected \
-          --base=${{ env.NX_BASE }}
-          --head=${{ env.NX_HEAD }}
-          --target=version
+          --base=${{ env.NX_BASE }} \
+          --head=${{ env.NX_HEAD }} \
+          --target=version \
           --parallel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
