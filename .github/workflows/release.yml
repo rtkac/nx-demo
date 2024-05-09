@@ -29,15 +29,15 @@ jobs:
         uses: nrwl/nx-set-shas@v4
         with:
           last-successful-event: 'pull-request'
-          error-on-no-successful-workflow: true
           main-branch-name: 'main'
       - name: Run versioning
         shell: bash
         run: |
           npx nx affected \
-          --base=${{ steps.setSHAs.outputs.base }} \
-          --head=${{ steps.setSHAs.outputs.head }} \
+          --base=${{ env.NX_BASE }}
+          --head=${{ env.NX_HEAD }}
           --target=version
+          --parallel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push release commit with created tag to remote
