@@ -6,12 +6,11 @@ on:
     branches: [main]
     types: [closed]
 
-permissions:
-  contents: write
-
 jobs:
-  release:
+  versioning:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
@@ -23,7 +22,8 @@ jobs:
       - name: Setup Git
         run: |
           git config user.name "GitHub Bot"
-      - run: npm ci
+      - name: Install dependencies
+        run: npm ci
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v3
         id: setSHAs
@@ -39,7 +39,7 @@ jobs:
           --target=version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Push to remote
+      - name: Push release commit with created tag to remote
         shell: bash
         run: |
           git push --follow-tags origin main --force
