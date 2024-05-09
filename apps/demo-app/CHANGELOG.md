@@ -1,5 +1,15 @@
 # Changelog Demo App 
 
+# [0.1.0-1](https://github.com/rtkac/nx-demo/compare/demo-app@0.1.0-0...demo-app@0.1.0-1) (2024-05-09)
+
+
+### Bug Fixes
+
+* **all:** release workflow ([4eab2bb](https://github.com/rtkac/nx-demo/commit/4eab2bb056c81d4620328e242d5dad9dcf29226a))
+* **demo-app:** updated app entry ([e13ce34](https://github.com/rtkac/nx-demo/commit/e13ce344bf2ebd84cea4e3ecb4ee215a00651cc0))
+
+
+
 # 0.1.0-0 (2024-05-09)
 
 
