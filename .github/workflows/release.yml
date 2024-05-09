@@ -24,10 +24,19 @@ jobs:
         run: |
           git config user.name "GitHub Bot"
       - run: npm ci
-      - uses: nrwl/nx-set-shas@v3
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v3
+        id: setSHAs
+        with:
+          last-successful-event: 'pull-request'
+          main-branch-name: 'main'
       - name: Run versioning
         shell: bash
-        run: npx nx affected --base=remotes/origin/main --target=version
+        run: |
+          npx nx affected \
+          --base=${{ steps.setSHAs.outputs.base }} \
+          --head=${{ steps.setSHAs.outputs.head }} \
+          --target=version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push to remote
