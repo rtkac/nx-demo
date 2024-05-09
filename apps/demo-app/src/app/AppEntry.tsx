@@ -1,4 +1,4 @@
-import { DirectionsBoundary, OutageBoundary, ReduxBoundary, RouterBoundary, TranslationsBoundary } from './boundaries'
+import { DirectionsBoundary, OutageBoundary, ReduxBoundary, RouterBoundary, TranslationsBoundary } from './boundaries';
 
 export function AppEntry() {
   return (
@@ -11,7 +11,7 @@ export function AppEntry() {
         </ReduxBoundary>
       </DirectionsBoundary>
     </TranslationsBoundary>
-  )
+  );
 }
 
-export default AppEntry
+export default AppEntry;
