@@ -38,7 +38,6 @@ jobs:
           --head=${{ steps.setSHAs.outputs.head }} \
           --target=version \
           --nx-bail \
-          --skip-nx-cache \
           --parallel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
