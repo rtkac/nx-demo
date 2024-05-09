@@ -25,12 +25,14 @@ jobs:
         run: |
           git config user.name "GitHub Bot"
       - run: npm ci
+      - run: git branch --track main origin/main
+        if: ${{ github.event_name == 'pull_request' }}
       - name: Version
         shell: bash
-        run: npx nx affected --base=origin/main --head=origin/main --target=version
+        run: npx nx affected --base=main --target=version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push to remote
         shell: bash
         run: |
-          git push origin main --force
+          git push --follow-tags origin main --force
