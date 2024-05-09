@@ -6,7 +6,9 @@ export function AppEntry() {
       <DirectionsBoundary>
         <ReduxBoundary>
           <OutageBoundary>
-            <RouterBoundary />
+            <div>
+              <RouterBoundary />
+            </div>
           </OutageBoundary>
         </ReduxBoundary>
       </DirectionsBoundary>
