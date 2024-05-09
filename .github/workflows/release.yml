@@ -34,7 +34,7 @@ jobs:
         shell: bash
         run: |
           npx nx affected \
-          --base=$BEFORE_SHA
+          --base=$BEFORE_SHA \
           --head=${{ env.NX_HEAD }} \
           --target=version \
           --nx-bail \
