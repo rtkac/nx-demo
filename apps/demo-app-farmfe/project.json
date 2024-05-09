@@ -25,7 +25,9 @@
         "baseBranch": "main",
         "syncVersions": false,
         "commitMessageFormat": "chore({projectName}): release: v{version}",
-        "push": false
+        "push": true,
+        "tagPrefix": "{projectName}@",
+        "releaseAs": "prerelease"
       }
     }
   }

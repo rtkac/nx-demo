@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22'
-      - name: Setup Git
+      - name: Setup git
         run: |
           git config user.name "GitHub Bot"
       - name: Install dependencies
