@@ -34,8 +34,8 @@ jobs:
         shell: bash
         run: |
           npx nx affected \
-          --base=$BEFORE_SHA \
-          --head=${{ env.NX_HEAD }} \
+          --base=${{ steps.setSHAs.outputs.base }} \
+          --head=${{ steps.setSHAs.outputs.head }} \
           --target=version \
           --nx-bail \
           --skip-nx-cache \
@@ -46,5 +46,3 @@ jobs:
         shell: bash
         run: |
           git push --follow-tags origin main --force
-      - name: Tag main branch if all jobs succeed
-        uses: nrwl/nx-tag-successful-ci-run@v1
