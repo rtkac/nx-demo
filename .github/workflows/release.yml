@@ -34,10 +34,11 @@ jobs:
         shell: bash
         run: |
           npx nx affected \
-          --nx-bail \
           --base=${{ env.NX_BASE }} \
           --head=${{ env.NX_HEAD }} \
           --target=version \
+          --nx-bail \
+          --skip-nx-cache \
           --parallel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
