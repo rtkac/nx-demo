@@ -1,11 +1,11 @@
-import type React from 'react'
+import type React from 'react';
 
 export const Root: React.FC = () => {
   return (
     <div role="status">
       <svg
         aria-hidden="true"
-        className="w-8 h-8 text-mauve4 animate-spin fill-violet-800"
+        className="w-8 h-8 text-mauve4 animate-spin fill-violet-700"
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -21,5 +21,5 @@ export const Root: React.FC = () => {
       </svg>
       <span className="sr-only">Loading...</span>
     </div>
-  )
-}
+  );
+};

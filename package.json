@@ -2,10 +2,6 @@
   "name": "@nx-monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "workspace": [
-    "apps",
-    "libs"
-  ],
   "engines": {
     "node": ">= 20.11.1",
     "npm": ">= 10.2.4"
