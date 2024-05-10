@@ -5,7 +5,7 @@ export const Root: React.FC = () => {
     <div role="status">
       <svg
         aria-hidden="true"
-        className="w-8 h-8 text-mauve4 animate-spin fill-violet-700"
+        className="w-8 h-8 text-mauve4 animate-spin fill-violet-600"
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

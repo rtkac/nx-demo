@@ -40,6 +40,8 @@ jobs:
           --parallel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set affected apps
+        run: echo AFFECTED_APPS=$(npx nx show projects --affected --type=app --head=${{ env.NX_HEAD }} --base=${{ env.NX_BASE }}) >> $GITHUB_ENV
       - name: Push release commit with created tag to remote
         shell: bash
         run: |
