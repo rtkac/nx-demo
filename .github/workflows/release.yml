@@ -26,7 +26,7 @@ jobs:
         run: npm ci
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         id: setSHAs
-        uses: nrwl/nx-set-shas@177b48373c6dc583ce0d9257ffb484bdd232fedf
+        uses: nrwl/nx-set-shas@v4
         with:
           last-successful-event: 'pull-request'
           main-branch-name: 'main'
@@ -34,14 +34,14 @@ jobs:
         shell: bash
         run: |
           npx nx affected \
+          --base=${{ steps.setSHAs.outputs.base }} \
+          --head=${{ steps.setSHAs.outputs.head }} \
           --target=version \
-          --head=${{ env.NX_HEAD }} \
-          --base=${{ env.NX_BASE }} \
+          --nx-bail \
+          --skip-nx-cache \
           --parallel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Set affected apps
-        run: echo AFFECTED_APPS=$(npx nx show projects --affected --type=app --head=${{ env.NX_HEAD }} --base=${{ env.NX_BASE }}) >> $GITHUB_ENV
       - name: Push release commit with created tag to remote
         shell: bash
         run: |

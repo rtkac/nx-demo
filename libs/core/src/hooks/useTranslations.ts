@@ -13,5 +13,5 @@ export const useTranslationsDocumentAttribute = () => {
     }
   }, [i18n, i18n.resolvedLanguage])
 
-  return { resolved }
+  return { resolved, i18n }
 }
